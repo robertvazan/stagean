@@ -31,4 +31,28 @@
  * All other information can be included informally in annotation's parameter or in a comment above the annotation.
  * Annotations are not repeatable, because different issues affecting the same code can be listed in annotation's parameter.
  */
+/**
+ * This package contains annotation types that can be used to document current development stage on type or member level.
+ * Hand-edited annotations can complement the sometimes inaccurate coverage tools.
+ * <p>
+ * Four development stages (or levels of quality) are recognized:
+ * <ul>
+ * <li>{@code No*} - if that kind of content does not exist at all</li>
+ * <li>{@code Stub*} - if only short placeholder exists</li>
+ * <li>{@code Draft*} - if something is unfinished (regardless of how much)</li>
+ * <li>{@code Complete*} - if that kind of content is finished (default)</li>
+ * </ul>
+ * <p>
+ * The following kinds of content have predefined annotation types:
+ * <ul>
+ * <li>{@code *Code} - implementation excluding the API</li>
+ * <li>{@code *Api} - API, the signature and behavior of public members</li>
+ * <li>{@code *Tests} - tests, usually meaning unit tests</li>
+ * <li>{@code *Docs} - javadoc</li>
+ * </ul>
+ * <p>
+ * There is no {@code NoCode} or {@code NoApi} since those have no meaning and {@code DraftCode}/{@code DraftApi} should be used instead.
+ * Nuances in meaning can be clarified in string parameter that is taken by all annotations.
+ * Application is free to define its own annotation types.
+ */
 package com.machinezoo.stagean;
