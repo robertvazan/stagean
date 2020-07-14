@@ -4,12 +4,12 @@ package com.machinezoo.stagean;
 import java.lang.annotation.*;
 
 /**
- * Flags code that has almost no javadoc.
- * Stub javadoc includes only the summary line and perhaps some other basic information.
+ * Optionally flags code that has finished javadoc.
+ * This is the default when no annotation is present.
  */
 @Documented
 @Target({ ElementType.ANNOTATION_TYPE, ElementType.CONSTRUCTOR, ElementType.FIELD, ElementType.METHOD, ElementType.PACKAGE, ElementType.TYPE })
-public @interface StubDocs {
+public @interface CompleteDocs {
 	/**
 	 * Free-form text used for clarification.
 	 * 

@@ -4,8 +4,7 @@ package com.machinezoo.stagean;
 import java.lang.annotation.*;
 
 /**
- * Flags code that has javadoc in draft quality.
- * Draft javadoc is any javadoc that is somehow unfinished.
+ * Flags code that has unfinished javadoc.
  * Annotation parameter should clarify what needs to be finished.
  */
 @Documented
