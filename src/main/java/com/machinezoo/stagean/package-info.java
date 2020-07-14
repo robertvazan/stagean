@@ -33,7 +33,7 @@
  */
 /**
  * This package contains annotation types that can be used to document current development stage on type or member level.
- * Hand-edited annotations can complement the sometimes inaccurate coverage tools.
+ * Hand-edited annotations can complement the sometimes inaccurate coverage tools. All annotations are visible in javadoc
  * <p>
  * Four development stages (or levels of quality) are recognized:
  * <ul>
@@ -45,14 +45,21 @@
  * <p>
  * The following kinds of content have predefined annotation types:
  * <ul>
- * <li>{@code *Code} - implementation excluding the API</li>
- * <li>{@code *Api} - API, the signature and behavior of public members</li>
- * <li>{@code *Tests} - tests, usually meaning unit tests</li>
- * <li>{@code *Docs} - javadoc</li>
+ * <li>{@code *Api} - APIs, i.e. signature and semantics of public types and members</li>
+ * <li>{@code *Code} - implementation code, i.e. all code behind APIs</li>
+ * <li>{@code *Tests} - tests, usually unit tests</li>
+ * <li>{@code *Docs} - javadoc, perhaps also external docs (presumably linked from the javadoc)</li>
  * </ul>
  * <p>
- * There is no {@code NoCode} or {@code NoApi} since those have no meaning and {@code DraftCode}/{@code DraftApi} should be used instead.
+ * There are no {@code NoCode} and {@code NoApi} annotation, because they have no meaning
+ * and {@code DraftCode}/{@code DraftApi} annotations should be used in their place instead.
  * Nuances in meaning can be clarified in string parameter that is taken by all annotations.
- * Application is free to define its own annotation types.
+ * Applications/libraries are free to define their own annotation types,
+ * but the above listed ones are expected to be supported by scanning tools.
+ * <p>
+ * Annotations have the default retention {@link java.lang.annotation.RetentionPolicy#CLASS}.
+ * Tools can scan for these annotations in sources, during annotation processing, and in compiled class files.
+ * Annotations also show up in javadoc for annotated code,
+ * so that users are informed about development stage of the class/method they are using.
  */
 package com.machinezoo.stagean;

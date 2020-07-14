@@ -6,7 +6,7 @@ import java.lang.annotation.*;
 /**
  * Optionally flags code that has finished implementation.
  * This is the default when no annotation is present.
- * This annotation describes implementation only. It says nothing about API.
+ * This annotation describes implementation only. It says nothing about its API.
  * Use {@link CompleteApi} to indicate the API is finished too.
  */
 @Documented
