@@ -3,7 +3,7 @@ package com.machinezoo.stagean;
 
 import org.junit.jupiter.api.*;
 
-@NoDocs
+@CompleteTests
 public class ApplicabilityTest {
 	@Test
 	@NoDocs("just a test")
