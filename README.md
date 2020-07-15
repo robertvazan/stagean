@@ -25,6 +25,10 @@ In the above example, `@NoDocs`, `@DraftTests`, and `@StubCode` are development 
 
 Stagean is available from [Maven Central](https://search.maven.org/artifact/com.machinezoo.stagean/stagean). Further setup instructions are on the [website](https://stagean.machinezoo.com/). Stagean is distributed under [Apache License 2.0](LICENSE).
 
+## Status ##
+
+Stagean API is stable. Stagean is currently used only in author's own projects, but it is intended for public use.
+
 ## Documentation ##
 
 [Stagean website](https://stagean.machinezoo.com/) provides background, overview, and examples. Use [javadoc](https://stagean.machinezoo.com/javadoc/com/machinezoo/stagean/package-summary.html) for reference.
