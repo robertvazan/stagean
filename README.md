@@ -21,13 +21,13 @@ public class MyClass {
 
 In the above example, `@NoDocs`, `@DraftTests`, and `@StubCode` are development stage annotations.
 
-## Download ##
-
-Stagean is available from [Maven Central](https://search.maven.org/artifact/com.machinezoo.stagean/stagean). Further setup instructions are on the [website](https://stagean.machinezoo.com/). Stagean is distributed under [Apache License 2.0](LICENSE).
-
 ## Status ##
 
 Stagean API is stable. Stagean is currently used only in author's own projects, but it is intended for public use.
+
+## Download ##
+
+Stagean is available from [Maven Central](https://search.maven.org/artifact/com.machinezoo.stagean/stagean). Further setup instructions are on the [website](https://stagean.machinezoo.com/). Stagean is distributed under [Apache License 2.0](LICENSE).
 
 ## Documentation ##
 
