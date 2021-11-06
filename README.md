@@ -1,5 +1,5 @@
 [![Maven Central](https://img.shields.io/maven-central/v/com.machinezoo.stagean/stagean)](https://search.maven.org/artifact/com.machinezoo.stagean/stagean)
-[![Build Status](https://travis-ci.com/robertvazan/stagean.svg?branch=master)](https://travis-ci.com/robertvazan/stagean)
+[![Build Status](https://travis-ci.com/robertvazan/stagean.svg?branch=master)](https://app.travis-ci.com/github/robertvazan/stagean)
 
 # Stagean annotations #
 
