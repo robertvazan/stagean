@@ -61,5 +61,7 @@
  * Tools can scan for these annotations in sources, during annotation processing, and in compiled class files.
  * Annotations also show up in javadoc for annotated code,
  * so that users are informed about development stage of the class/method they are using.
+ * 
+ * @see <a href="https://stagean.machinezoo.com/">Stagean tutorial</a>
  */
 package com.machinezoo.stagean;
