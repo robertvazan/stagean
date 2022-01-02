@@ -6,9 +6,9 @@
  * 
  * Explanation of why annotations are defined the way they are:
  * 
- * @Target({ ElementType.ANNOTATION_TYPE, ElementType.CONSTRUCTOR, ElementType.FIELD, ElementType.METHOD, ElementType.PACKAGE, ElementType.TYPE })
+ * @Target({ ElementType.ANNOTATION_TYPE, ElementType.CONSTRUCTOR, ElementType.FIELD, ElementType.METHOD, ElementType.PACKAGE, ElementType.TYPE, ElementType.MODULE })
  * 
- * Annotations defined here can be applied to any type or member.
+ * Annotations defined here can be applied to any type or member or their grouping (package, module, outer type).
  * Only locals and parameters are excluded, because it makes no sense to annotate them with development stages.
  * In the rare cases where it does make sense, for example when parameter has poor javadoc,
  * the enclosing type or member should be annotated instead with clarifying message as its value or comment.
@@ -51,7 +51,7 @@
  * <li>{@code *Docs} - javadoc, perhaps also external docs (presumably linked from the javadoc)</li>
  * </ul>
  * <p>
- * There are no {@code NoCode} and {@code NoApi} annotation, because they have no meaning
+ * There are no {@code NoCode} and {@code NoApi} annotations, because they have no meaning
  * and {@code DraftCode}/{@code DraftApi} annotations should be used in their place instead.
  * Nuances in meaning can be clarified in string parameter that is taken by all annotations.
  * Applications/libraries are free to define their own annotation types,
@@ -62,6 +62,6 @@
  * Annotations also show up in javadoc for annotated code,
  * so that users are informed about development stage of the class/method they are using.
  * 
- * @see <a href="https://stagean.machinezoo.com/">Stagean tutorial</a>
+ * @see <a href="https://stagean.machinezoo.com/">Stagean homepage</a>
  */
 package com.machinezoo.stagean;

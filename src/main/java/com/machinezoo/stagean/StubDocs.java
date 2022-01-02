@@ -8,7 +8,7 @@ import java.lang.annotation.*;
  * Stub javadoc includes only the summary line and perhaps some other basic information.
  */
 @Documented
-@Target({ ElementType.ANNOTATION_TYPE, ElementType.CONSTRUCTOR, ElementType.FIELD, ElementType.METHOD, ElementType.PACKAGE, ElementType.TYPE })
+@Target({ ElementType.ANNOTATION_TYPE, ElementType.CONSTRUCTOR, ElementType.FIELD, ElementType.METHOD, ElementType.PACKAGE, ElementType.TYPE, ElementType.MODULE })
 public @interface StubDocs {
 	/**
 	 * Free-form text used for clarification.

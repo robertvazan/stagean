@@ -8,7 +8,7 @@ import java.lang.annotation.*;
  * Annotation parameter should clarify what needs to be finished.
  */
 @Documented
-@Target({ ElementType.ANNOTATION_TYPE, ElementType.CONSTRUCTOR, ElementType.FIELD, ElementType.METHOD, ElementType.PACKAGE, ElementType.TYPE })
+@Target({ ElementType.ANNOTATION_TYPE, ElementType.CONSTRUCTOR, ElementType.FIELD, ElementType.METHOD, ElementType.PACKAGE, ElementType.TYPE, ElementType.MODULE })
 public @interface DraftDocs {
 	/**
 	 * Free-form text used for clarification.

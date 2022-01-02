@@ -8,7 +8,7 @@ import java.lang.annotation.*;
  * Stub code does not implement any feature. It just throws an exception or simply does nothing.
  */
 @Documented
-@Target({ ElementType.ANNOTATION_TYPE, ElementType.CONSTRUCTOR, ElementType.FIELD, ElementType.METHOD, ElementType.PACKAGE, ElementType.TYPE })
+@Target({ ElementType.ANNOTATION_TYPE, ElementType.CONSTRUCTOR, ElementType.FIELD, ElementType.METHOD, ElementType.PACKAGE, ElementType.TYPE, ElementType.MODULE })
 public @interface StubCode {
 	/**
 	 * Free-form text used for clarification.

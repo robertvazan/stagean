@@ -10,7 +10,7 @@ import java.lang.annotation.*;
  * Use {@link CompleteApi} to indicate the API is finished too.
  */
 @Documented
-@Target({ ElementType.ANNOTATION_TYPE, ElementType.CONSTRUCTOR, ElementType.FIELD, ElementType.METHOD, ElementType.PACKAGE, ElementType.TYPE })
+@Target({ ElementType.ANNOTATION_TYPE, ElementType.CONSTRUCTOR, ElementType.FIELD, ElementType.METHOD, ElementType.PACKAGE, ElementType.TYPE, ElementType.MODULE })
 public @interface CompleteCode {
 	/**
 	 * Free-form text used for clarification.

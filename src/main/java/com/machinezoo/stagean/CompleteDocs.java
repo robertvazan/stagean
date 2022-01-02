@@ -8,7 +8,7 @@ import java.lang.annotation.*;
  * This is the default when no annotation is present.
  */
 @Documented
-@Target({ ElementType.ANNOTATION_TYPE, ElementType.CONSTRUCTOR, ElementType.FIELD, ElementType.METHOD, ElementType.PACKAGE, ElementType.TYPE })
+@Target({ ElementType.ANNOTATION_TYPE, ElementType.CONSTRUCTOR, ElementType.FIELD, ElementType.METHOD, ElementType.PACKAGE, ElementType.TYPE, ElementType.MODULE })
 public @interface CompleteDocs {
 	/**
 	 * Free-form text used for clarification.

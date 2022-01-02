@@ -9,7 +9,7 @@ import java.lang.annotation.*;
  * Since APIs are expected to be stable, this annotation also describes APIs that are completely defined but still likely to change in the future.
  */
 @Documented
-@Target({ ElementType.ANNOTATION_TYPE, ElementType.CONSTRUCTOR, ElementType.FIELD, ElementType.METHOD, ElementType.PACKAGE, ElementType.TYPE })
+@Target({ ElementType.ANNOTATION_TYPE, ElementType.CONSTRUCTOR, ElementType.FIELD, ElementType.METHOD, ElementType.PACKAGE, ElementType.TYPE, ElementType.MODULE })
 public @interface DraftApi {
 	/**
 	 * Free-form text used for clarification.
