@@ -11,6 +11,7 @@ import java.lang.annotation.*;
 public @interface NoTests {
 	/**
 	 * Free-form text used for clarification.
+	 * If there are too many issues to list, {@link TestIssue} annotations can be used to spread them over several lines.
 	 * 
 	 * @return free-form clarification
 	 */

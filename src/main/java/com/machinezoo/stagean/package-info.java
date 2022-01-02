@@ -30,6 +30,7 @@
  * From the point of view of annotation tools, all that matters is assigning quality level to a piece of code.
  * All other information can be included informally in annotation's parameter or in a comment above the annotation.
  * Annotations are not repeatable, because different issues affecting the same code can be listed in annotation's parameter.
+ * It is however possible to spread them over several lines using *Issue annotations.
  */
 /**
  * This package contains annotation types that can be used to document current development stage on type or member level.
@@ -53,9 +54,12 @@
  * <p>
  * There is no {@code NoCode} annotation, because it has no meaning
  * and {@code StubCode} annotation should be used in its place instead.
- * Nuances in meaning can be clarified in string parameter that is taken by all annotations.
  * Applications/libraries are free to define their own annotation types,
  * but the above listed ones are expected to be supported by scanning tools.
+ * <p>
+ * Nuances in meaning can be clarified in string parameter that is taken by all annotations.
+ * Specific issues are however better described with {@code *Issue} annotations,
+ * which can be repeated and thus provide more space for detailed descriptions.
  * <p>
  * Annotations have the default retention {@link java.lang.annotation.RetentionPolicy#CLASS}.
  * Tools can scan for these annotations in sources, during annotation processing, and in compiled class files.
