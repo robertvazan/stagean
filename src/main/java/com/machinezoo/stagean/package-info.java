@@ -51,8 +51,8 @@
  * <li>{@code *Docs} - javadoc, perhaps also external docs (presumably linked from the javadoc)</li>
  * </ul>
  * <p>
- * There are no {@code NoCode} and {@code NoApi} annotations, because they have no meaning
- * and {@code DraftCode}/{@code DraftApi} annotations should be used in their place instead.
+ * There is no {@code NoCode} annotation, because it has no meaning
+ * and {@code StubCode} annotation should be used in its place instead.
  * Nuances in meaning can be clarified in string parameter that is taken by all annotations.
  * Applications/libraries are free to define their own annotation types,
  * but the above listed ones are expected to be supported by scanning tools.
