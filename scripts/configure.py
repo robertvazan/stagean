@@ -11,7 +11,6 @@ from java import *
 project_script_path = __file__
 repository_name = lambda: 'stagean'
 pretty_name = lambda: 'Stagean'
-pom_version = lambda: '1.1.0'
 pom_description = lambda: 'Annotation types documenting current development stage on class or method level.'
 inception_year = lambda: 2020
 jdk_version = lambda: 11
