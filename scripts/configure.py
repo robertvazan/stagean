@@ -7,6 +7,7 @@ sys.path.append('../../project-config/src')
 
 from java import *
 
+project_script_path = __file__
 repository_name = lambda: 'stagean'
 pretty_name = lambda: 'Stagean'
 pom_version = lambda: '1.1.0'
