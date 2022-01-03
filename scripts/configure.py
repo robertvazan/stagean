@@ -2,8 +2,9 @@
 
 # We are assuming that project-config is available in sibling directory.
 # Checkout from https://github.com/robertvazan/project-config
+import os.path
 import sys
-sys.path.append('../../project-config/src')
+sys.path.append(os.path.normpath(os.path.join(__file__, '../../../project-config/src')))
 
 from java import *
 
