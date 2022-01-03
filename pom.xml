@@ -5,7 +5,7 @@
 
 	<groupId>com.machinezoo.stagean</groupId>
 	<artifactId>stagean</artifactId>
-	<version>1.1.0</version>
+	<version>1.2.0</version>
 
 	<name>Stagean</name>
 	<description>Annotation types documenting current development stage on class or method level.</description>
