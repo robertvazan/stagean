@@ -11,10 +11,12 @@ import org.junit.jupiter.api.*;
 @DraftApi
 @StubTests
 @NoDocs
+@CodeIssue("issue")
 public class ApplicabilityTest {
 	/*
 	 * All annotation applied.
 	 */
+	@NoApi
 	@NoTests
 	@NoDocs
 	public static void none() {
@@ -37,6 +39,16 @@ public class ApplicabilityTest {
 	@CompleteDocs
 	public static void complete() {
 	}
+	@CodeIssue("code issue")
+	@ApiIssue("API issue")
+	@TestIssue("test issue")
+	@DocIssue("doc issue")
+	public static void issues() {
+	}
+	@CodeIssue("issue 1")
+	@CodeIssue("issue 2")
+	public static void repeating() {
+	}
 	/*
 	 * Field target.
 	 */
@@ -44,6 +56,7 @@ public class ApplicabilityTest {
 	@DraftApi
 	@StubTests
 	@NoDocs
+	@CodeIssue("issue")
 	public static int field;
 	/*
 	 * Constructor target.
@@ -52,6 +65,7 @@ public class ApplicabilityTest {
 	@DraftApi
 	@StubTests
 	@NoDocs
+	@CodeIssue("issue")
 	public ApplicabilityTest() {
 	}
 	public static enum EnumTarget {
@@ -63,6 +77,7 @@ public class ApplicabilityTest {
 		@DraftApi
 		@StubTests
 		@NoDocs
+		@CodeIssue("issue")
 		TWO;
 	}
 	/*
@@ -72,6 +87,7 @@ public class ApplicabilityTest {
 	@DraftApi
 	@StubTests
 	@NoDocs
+	@CodeIssue("issue")
 	public static @interface AnnotationTarget {
 	}
 	/*
@@ -81,6 +97,7 @@ public class ApplicabilityTest {
 	@DraftApi
 	@StubTests
 	@NoDocs
+	@CodeIssue("issue")
 	public static void method() {
 	}
 	/*
@@ -90,6 +107,7 @@ public class ApplicabilityTest {
 	@DraftApi("test")
 	@StubTests("test")
 	@NoDocs("test")
+	@CodeIssue("issue")
 	public static void parameter() {
 	}
 	@Test
