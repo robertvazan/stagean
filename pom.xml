@@ -9,6 +9,7 @@
 
 	<name>Stagean</name>
 	<description>Annotation types documenting current development stage on class or method level.</description>
+
 	<url>https://stagean.machinezoo.com/</url>
 	<inceptionYear>2020</inceptionYear>
 
@@ -64,7 +65,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-javadoc-plugin</artifactId>
-				<version>3.2.0</version>
+				<version>3.3.1</version>
 				<configuration>
 					<notimestamp>true</notimestamp>
 					<bottom>
