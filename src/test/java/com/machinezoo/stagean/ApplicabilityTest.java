@@ -8,7 +8,7 @@ import org.junit.jupiter.api.*;
  * Type target.
  */
 @CompleteCode
-@DraftApi
+@DraftApi("explanation")
 @StubTests
 @NoDocs
 @CodeIssue("issue")
@@ -118,6 +118,7 @@ public class ApplicabilityTest {
 	}
 	@Test
 	public void runtime() {
-		assertEquals(0, ApplicabilityTest.class.getAnnotations().length);
+		assertEquals("explanation", ApplicabilityTest.class.getAnnotation(DraftApi.class).value());
+		assertEquals("issue", ApplicabilityTest.class.getAnnotationsByType(CodeIssue.class)[0].value());
 	}
 }
