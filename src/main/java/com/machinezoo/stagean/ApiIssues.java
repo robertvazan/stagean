@@ -8,6 +8,7 @@ import java.lang.annotation.*;
  * This annotation should not be used directly. Repeat {@link ApiIssue} annotation instead.
  */
 @Documented
+@Retention(RetentionPolicy.RUNTIME)
 @Target({ ElementType.ANNOTATION_TYPE, ElementType.CONSTRUCTOR, ElementType.FIELD, ElementType.METHOD, ElementType.PACKAGE, ElementType.TYPE, ElementType.MODULE })
 public @interface ApiIssues {
 	/**

@@ -18,11 +18,11 @@
  * All annotations are marked as @Documented, so that users of the code can see the markings directly in javadoc
  * without having to wade through the code. Use of scanning tools is nevertheless preferable to annotation-spotting in javadoc.
  * 
- * @Retention(RetentionPolicy.CLASS)
+ * @Retention(RetentionPolicy.RUNTIME)
  * 
- * This is the default and thus omitted. We want the annotations in class files, so that maven artifacts and other binaries can be scanned.
- * We don't want the annotations loaded at runtime, because they take up RAM and slow down loading (a bit)
- * and there is no sensible way to use them at runtime, because applications/libraries have no reason to scan themselves.
+ * Large applications might reasonably want to scan themselves in order to display pending issues in application UI.
+ * This adds some cost to class loading and increases RAM usage, but the cost is proportional to number of annotations,
+ * which should be very low in mature code.
  * 
  * String value() default "";
  * 
@@ -61,9 +61,9 @@
  * Specific issues are however better described with {@code *Issue} annotations,
  * which can be repeated and thus provide more space for detailed descriptions.
  * <p>
- * Annotations have the default retention {@link java.lang.annotation.RetentionPolicy#CLASS}.
+ * Annotations have retention policy set to {@link java.lang.annotation.RetentionPolicy#RUNTIME}.
  * Tools can scan for these annotations in sources, during annotation processing, and in compiled class files.
- * Annotations also show up in javadoc for annotated code,
+ * Applications can scan themselves at runtime. Annotations also show up in javadoc for annotated code,
  * so that users are informed about development stage of the class/method they are using.
  * 
  * @see <a href="https://stagean.machinezoo.com/">Stagean homepage</a>

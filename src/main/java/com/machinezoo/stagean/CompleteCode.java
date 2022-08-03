@@ -10,6 +10,7 @@ import java.lang.annotation.*;
  * Use {@link CompleteApi} to indicate the API is finished too.
  */
 @Documented
+@Retention(RetentionPolicy.RUNTIME)
 @Target({ ElementType.ANNOTATION_TYPE, ElementType.CONSTRUCTOR, ElementType.FIELD, ElementType.METHOD, ElementType.PACKAGE, ElementType.TYPE, ElementType.MODULE })
 public @interface CompleteCode {
 	/**

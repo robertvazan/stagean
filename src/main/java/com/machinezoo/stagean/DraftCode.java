@@ -9,6 +9,7 @@ import java.lang.annotation.*;
  * For cases where implementation is finished, but its API still needs work or it is likely to change, use {@link DraftApi}.
  */
 @Documented
+@Retention(RetentionPolicy.RUNTIME)
 @Target({ ElementType.ANNOTATION_TYPE, ElementType.CONSTRUCTOR, ElementType.FIELD, ElementType.METHOD, ElementType.PACKAGE, ElementType.TYPE, ElementType.MODULE })
 public @interface DraftCode {
 	/**

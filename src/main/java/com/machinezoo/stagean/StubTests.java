@@ -9,6 +9,7 @@ import java.lang.annotation.*;
  * This annotation is intended for the code under test, but it can be also applied to tests themselves.
  */
 @Documented
+@Retention(RetentionPolicy.RUNTIME)
 @Target({ ElementType.ANNOTATION_TYPE, ElementType.CONSTRUCTOR, ElementType.FIELD, ElementType.METHOD, ElementType.PACKAGE, ElementType.TYPE, ElementType.MODULE })
 public @interface StubTests {
 	/**

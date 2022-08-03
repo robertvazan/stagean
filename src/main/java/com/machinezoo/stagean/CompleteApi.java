@@ -9,6 +9,7 @@ import java.lang.annotation.*;
  * Since APIs are expected to be stable, this annotation also implies the API is unlikely to change in the future.
  */
 @Documented
+@Retention(RetentionPolicy.RUNTIME)
 @Target({ ElementType.ANNOTATION_TYPE, ElementType.CONSTRUCTOR, ElementType.FIELD, ElementType.METHOD, ElementType.PACKAGE, ElementType.TYPE, ElementType.MODULE })
 public @interface CompleteApi {
 	/**

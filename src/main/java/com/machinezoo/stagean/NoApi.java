@@ -8,6 +8,7 @@ import java.lang.annotation.*;
  * This annotation can be applied to code that is used internally, but it could be exposed publicly.
  */
 @Documented
+@Retention(RetentionPolicy.RUNTIME)
 @Target({ ElementType.ANNOTATION_TYPE, ElementType.CONSTRUCTOR, ElementType.FIELD, ElementType.METHOD, ElementType.PACKAGE, ElementType.TYPE, ElementType.MODULE })
 public @interface NoApi {
 	/**

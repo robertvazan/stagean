@@ -10,6 +10,7 @@ import java.lang.annotation.*;
  * To describe non-existent implementation, use {@link StubCode}.
  */
 @Documented
+@Retention(RetentionPolicy.RUNTIME)
 @Target({ ElementType.ANNOTATION_TYPE, ElementType.CONSTRUCTOR, ElementType.FIELD, ElementType.METHOD, ElementType.PACKAGE, ElementType.TYPE, ElementType.MODULE })
 public @interface StubApi {
 	/**

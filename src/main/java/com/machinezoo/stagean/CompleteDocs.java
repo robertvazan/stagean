@@ -8,6 +8,7 @@ import java.lang.annotation.*;
  * This is the default when no annotation is present.
  */
 @Documented
+@Retention(RetentionPolicy.RUNTIME)
 @Target({ ElementType.ANNOTATION_TYPE, ElementType.CONSTRUCTOR, ElementType.FIELD, ElementType.METHOD, ElementType.PACKAGE, ElementType.TYPE, ElementType.MODULE })
 public @interface CompleteDocs {
 	/**

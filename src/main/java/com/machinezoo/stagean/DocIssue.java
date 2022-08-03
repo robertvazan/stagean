@@ -10,6 +10,7 @@ import java.lang.annotation.*;
  * especially when there are too many issues to list on one line.
  */
 @Documented
+@Retention(RetentionPolicy.RUNTIME)
 @Repeatable(DocIssues.class)
 @Target({ ElementType.ANNOTATION_TYPE, ElementType.CONSTRUCTOR, ElementType.FIELD, ElementType.METHOD, ElementType.PACKAGE, ElementType.TYPE, ElementType.MODULE })
 public @interface DocIssue {
