@@ -17,7 +17,7 @@ public @interface CodeIssue {
 	/**
 	 * Description of the issue.
 	 * 
-	 * @return free-form issue description
+	 * @return free-form issue description in Markdown syntax
 	 */
 	String value();
 }

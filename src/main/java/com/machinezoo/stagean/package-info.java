@@ -28,9 +28,8 @@
  * 
  * It is possible to clarify every use of every annotation just by adding free-form text as the only annotation parameter.
  * From the point of view of annotation tools, all that matters is assigning quality level to a piece of code.
- * All other information can be included informally in annotation's parameter or in a comment above the annotation.
- * Annotations are not repeatable, because different issues affecting the same code can be listed in annotation's parameter.
- * It is however possible to spread them over several lines using *Issue annotations.
+ * All other information can be included informally in annotation's parameter or via *Issue annotations.
+ * To allow tools to show as much information as possible, descriptions can use Markdown and they can span multiple lines.
  */
 /**
  * This package contains annotation types that can be used to document current development stage on type or member level.
@@ -58,8 +57,9 @@
  * but the above listed ones are expected to be supported by scanning tools.
  * <p>
  * Nuances in meaning can be clarified in string parameter that is taken by all annotations.
- * Specific issues are however better described with {@code *Issue} annotations,
- * which can be repeated and thus provide more space for detailed descriptions.
+ * Specific issues are however better described with {@code *Issue} annotations, which can be repeated.
+ * Longer text can be included in surrounding comments, but to allow tools to display as much information as possible,
+ * it is preferable to embed all comments in multi-line string literals using Markdown syntax.
  * <p>
  * Annotations have retention policy set to {@link java.lang.annotation.RetentionPolicy#RUNTIME}.
  * Tools can scan for these annotations in sources, during annotation processing, and in compiled class files.
