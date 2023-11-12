@@ -3,7 +3,7 @@
 
 # Stagean
 
-[![Maven Central](https://img.shields.io/maven-central/v/com.machinezoo.stagean/stagean)](https://search.maven.org/artifact/com.machinezoo.stagean/stagean)
+[![Maven Central](https://img.shields.io/maven-central/v/com.machinezoo.stagean/stagean)](https://central.sonatype.com/artifact/com.machinezoo.stagean/stagean)
 [![Build status](https://github.com/robertvazan/stagean/workflows/build/badge.svg)](https://github.com/robertvazan/stagean/actions/workflows/build.yml)
 
 Stagean is a Java library of annotation types that let you document development stage of your project on class or method level.
